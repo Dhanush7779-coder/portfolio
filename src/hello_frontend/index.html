@@ -1,16 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="src/index.scss" />
+  </head>
+  <style>
+    input::placeholder
+    {
+      color: aliceblue;
+    }
+    textarea::placeholder
+    {
+      color: white;
+    }
+  </style>
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IC Hello Starter</title>
-</head>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's me</h3>
+        <h1>C Venkat Dhanush</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          Dhanush, currently pursuing his BTech second year at Centurion University, Vizianagaram, is a passionate coder with a deep interest in technology. With strong skills in web development, he has already made significant strides in the digital world, crafting dynamic, user-centric web solutions. Additionally, his expertise as a data scientist allows him to seamlessly bridge the gap between raw data and actionable insights, leveraging the power of data to solve complex problems. His dedication to learning and growth in the field of coding positions him as a forward-thinking innovator in the tech landscape.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/chedalla-venkat-dhanush-584201302/"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+        <a href="" class="btn">Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="images/home.jpg" alt="" />
+      </div>
+    </section>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.js"></script>
-</body>
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about.png" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+          Dhanush, currently pursuing BTech second year at Centurion University, Vizianagaram, I a passionate coder with a deep interest in technology. With strong skills in web development, he has already made significant strides in the digital world, crafting dynamic, user-centric web solutions. Additionally, his expertise as a data scientist allows him to seamlessly bridge the gap between raw data and actionable insights, leveraging the power of data to solve complex problems. His dedication to learning and growth in the field of coding positions him as a forward-thinking innovator in the tech landscape.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
 
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Web development involves creating and maintaining websites, covering both front-end (user interface) and back-end (server, databases). With expertise in HTML, CSS, JavaScript, and frameworks like React and Node.js, I build responsive and dynamic websites tailored to user needs.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Data scientist</h3>
+          <p>
+            As a data scientist, I analyze and interpret complex data to extract actionable insights. Using statistical methods, machine learning, and tools like Python, R, and SQL, I help solve real-world problems, optimize decision-making, and drive data-driven strategies.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Smart Contract Writing</h3>
+          <p>
+            I specialize in writing smart contracts, ensuring secure and automated execution of agreements on blockchain platforms. Proficient in Solidity and other blockchain languages, I create reliable, transparent, and efficient contracts for decentralized applications (dApps).
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Pen Testing</h3>
+          <p>
+            Penetration testing (pen testing) involves identifying and exploiting vulnerabilities in systems, networks, or applications to assess security. Skilled in ethical hacking, I use tools like Metasploit and Nmap to simulate real-world attacks, ensuring robust protection against potential threats.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/portfolio1.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              I design, build, and maintain responsive websites and web applications
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio2.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              I design, build, and maintain responsive websites and web applications
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio3.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              I design, build, and maintain responsive websites and web applications
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio4.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              I design, build, and maintain responsive websites and web applications
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio5.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              I design, build, and maintain responsive websites and web applications
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio6.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              I design, build, and maintain responsive websites and web applications
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Cantact <span>Me</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023; by VENKAT | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </footer>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="src/main.js"></script>
+  </body>
 </html>
